@@ -2,14 +2,11 @@ import React, { useEffect } from 'react';
 import { useState } from 'react';
 
 import Products from '../Products/Products';
-import Sort from '../Sort';
 import Sidebar from './Sidebar';
 
 const Home = () => {
     const [products, setProducts] = useState();
-    const [data, setdata] = useState([]);
-
-
+    
 
     const price = products?.filter(pro => pro.Cprice < 50);
     console.log(price);

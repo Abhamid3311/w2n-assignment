@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useCallback } from 'react';
 import { useEffect } from 'react';
 import { AiOutlineSearch, AiOutlineMenuFold } from 'react-icons/ai';
 import { Link } from 'react-router-dom'
@@ -8,22 +9,30 @@ const Header = () => {
     const [products, setProducts] = useProducts();
     const [searchText, setSearchText] = useState('');
 
+    /* const productFunc = useCallback(() => {
+        const result = products?.filter(pro => pro.name.toLowerCase().includes(searchText.toLowerCase()));
 
-    console.log(products[0].name)
+        // console.log(result);
+        setProducts(result);
+        console.log(products);
 
-    //get Search Text
-    const handleSearch = e => {
-        e.preventDefault();
-        const searchText = e.target.value;
-        setSearchText(searchText);
-    };
+    }, [searchText,setProducts,products])
+
 
     useEffect(() => {
-        const result = products?.name?.toLowerCase().includes(searchText.toLowerCase());
+        productFunc();
+
+    }, [productFunc]); */
+
+
+    useEffect(() => {
+        const result = products?.filter(pro => pro.name.toLowerCase().includes(searchText.toLowerCase()));
 
         console.log(result);
+        setProducts(result);
+        // console.log(products);
 
-    }, [products, setProducts, searchText])
+    }, [searchText]);
 
 
 
@@ -40,7 +49,8 @@ const Header = () => {
                         <input
                             type="text"
                             placeholder="Search…"
-                            onChange={handleSearch}
+
+                            onChange={(e) => setSearchText(e.target.value)}
                             className="input input-bordered" />
                         <button className="btn btn-square">
                             <AiOutlineSearch />
