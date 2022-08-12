@@ -6,7 +6,7 @@
         "brand": "coles",
         "ratings": 120,
         "oldPrice": 25,
-        "Cprice": 20,
+        "cPrice": 20,
         "offer": "20%",
         "img": "https://images.unsplash.com/26/cactus.jpg?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=867&q=80"
     },
@@ -17,7 +17,7 @@
         "brand": "coles",
         "ratings": 100,
         "oldPrice": "",
-        "Cprice": 48.75,
+        "cPrice": 48.75,
         "offer": "",
         "img": "https://images.unsplash.com/photo-1549872178-96db16a53ca8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
     },
@@ -28,7 +28,7 @@
         "brand": "aldi",
         "ratings": 220,
         "oldPrice": 26.5,
-        "Cprice": 18.5,
+        "cPrice": 18.5,
         "offer": "33%",
         "img": "https://images.unsplash.com/photo-1463320898484-cdee8141c787?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
     },
@@ -38,8 +38,8 @@
         "catagory": "bagpack",
         "brand": "aldi",
         "ratings": 250,
-        "oldPrice": 55,
-        "Cprice": 45.5,
+        "oldPrice": 65,
+        "cPrice": 55.5,
         "offer": "25%",
         "img": "https://images.unsplash.com/photo-1514524865930-188150490d83?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
     },
@@ -50,7 +50,7 @@
         "brand": "woolworth",
         "ratings": 240,
         "oldPrice": 245,
-        "Cprice": 235.5,
+        "cPrice": 235.5,
         "offer": "27%",
         "img": "https://images.unsplash.com/photo-1493889872461-aec17bc5726f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
     },
@@ -61,7 +61,7 @@
         "brand": "woolworth",
         "ratings": 180,
         "oldPrice": "",
-        "Cprice": 20.5,
+        "cPrice": 20.5,
         "offer": "20%",
         "img": "https://images.unsplash.com/photo-1525088553748-01d6e210e00b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=876&q=80"
     },
@@ -72,7 +72,7 @@
         "brand": "woolworth",
         "ratings": 190,
         "oldPrice": "",
-        "Cprice": 143.5,
+        "cPrice": 143.5,
         "offer": "20%",
         "img": "https://images.unsplash.com/photo-1460134846237-51c777df6111?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
     },
@@ -83,7 +83,7 @@
         "brand": "aldi",
         "ratings": 320,
         "oldPrice": 25,
-        "Cprice": 20.5,
+        "cPrice": 20.5,
         "offer": "20%",
         "img": "https://images.unsplash.com/photo-1571091718767-18b5b1457add?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80"
     },
@@ -94,8 +94,41 @@
         "brand": "rfl",
         "ratings": 220,
         "oldPrice": "",
-        "Cprice": 125,
+        "cPrice": 125,
         "offer": "20%",
         "img": "https://images.unsplash.com/26/cactus.jpg?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=867&q=80"
+    },
+    {
+        "id": 210,
+        "name": "Delicious Burger 2",
+        "catagory": "food",
+        "brand": "aldi",
+        "ratings": 320,
+        "oldPrice": 75,
+        "cPrice": 65.5,
+        "offer": "20%",
+        "img": "https://images.unsplash.com/photo-1571091718767-18b5b1457add?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80"
+    },
+    {
+        "id": 211,
+        "name": "DSLR camera 2.0",
+        "catagory": "camera",
+        "brand": "woolworth",
+        "ratings": 190,
+        "oldPrice": "",
+        "cPrice": 143.5,
+        "offer": "20%",
+        "img": "https://images.unsplash.com/photo-1460134846237-51c777df6111?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+    },
+    {
+        "id": 212,
+        "name": "woolworth coffee",
+        "catagory": "food",
+        "brand": "woolworth",
+        "ratings": 180,
+        "oldPrice": "",
+        "cPrice": 25.5,
+        "offer": "",
+        "img": "https://images.unsplash.com/photo-1525088553748-01d6e210e00b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=876&q=80"
     }
 ]
