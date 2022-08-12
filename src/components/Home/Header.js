@@ -1,6 +1,4 @@
-import React, { useState } from 'react';
-import { useCallback } from 'react';
-import { useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { AiOutlineSearch, AiOutlineMenuFold } from 'react-icons/ai';
 import { Link } from 'react-router-dom'
 import useProducts from '../../hooks/useProducts';
@@ -9,27 +7,11 @@ const Header = () => {
     const [products, setProducts] = useProducts();
     const [searchText, setSearchText] = useState('');
 
-    /* const productFunc = useCallback(() => {
-        const result = products?.filter(pro => pro.name.toLowerCase().includes(searchText.toLowerCase()));
-
-        // console.log(result);
-        setProducts(result);
-        console.log(products);
-
-    }, [searchText,setProducts,products])
-
-
-    useEffect(() => {
-        productFunc();
-
-    }, [productFunc]); */
-
-
     useEffect(() => {
         const result = products?.filter(pro => pro.name.toLowerCase().includes(searchText.toLowerCase()));
 
-        console.log(result);
         setProducts(result);
+
         // console.log(products);
 
     }, [searchText]);
